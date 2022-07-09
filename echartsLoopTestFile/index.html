@@ -1,0 +1,51 @@
+<!-- main view -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>main view</title>
+		<link rel="stylesheet" href="main.css">
+		<script src="bin/jquery-3.2.1.min.js"></script>
+		<script src="bin/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="options/mainRose.js"></script>
+	</head>
+	<body>
+		<header class="nav">
+			<ul class="clear-fix">
+				<li><img src="img/logo.png" alt="" class="logo"></li>
+				<li class="active"><a href="#">Main</a></li>
+				<li><a href="#">Docs</a></li>
+				<li><a href="#">DownLoad</a></li>
+			</ul>
+		</header>
+		<div class="wraper clear-fix">
+			<div class="left-text">
+				<div class="title">Any Imagination</div>
+				<div class="sec-title">basic examples for demonstration</div>
+				<div class="clear-fix">
+					<button class="button-left"><img src="img/star.png" alt=""><span>TUTORS</span></button>
+					<button class="button-right"><img src="img/check.png" alt=""><span>EXAMPLES</span></button>
+				</div>
+			</div>
+			<div class="right">
+				<div id="right-pic"></div>
+				<div><img src="img/play.png" alt="" class="play" onclick="window.location.href='echartsDemo.html'"></div>
+			</div>
+		</div>
+	</body>
+	<script>
+		const rightChart = echarts.init(document.getElementById('right-pic'));
+		setTimeout(function() {
+			rightChart.setOption(roseOption);
+		}, 500);
+		setTimeout(function() {
+			$(function () {
+				$('.play').css('display','block')
+				// $('.play').fadeIn()
+				// $('.play').css('animation-duration','2s')
+			})
+			// document.getElementsByClassName('play').style.display = 'block';
+		}, 1500);
+
+	</script>
+</html>

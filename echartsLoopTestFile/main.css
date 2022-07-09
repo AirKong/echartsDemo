@@ -1,0 +1,127 @@
+.nav{
+    height: 60px;
+    box-shadow: 0 5px 5px 0 rgba(47, 79, 79,0.3);
+}
+.logo{
+    display: inline-block;
+    height: 40px;
+    top: 0;
+}
+ul li{
+    float: left;
+    list-style: none;
+    margin: 10px 20px 0 20px;
+    padding-bottom: 13px;
+}
+.active{
+    border-bottom: 5px solid darkgreen;
+}
+ul li a{
+    font: 14px/24px Microsoft YaHei,Arial,\\5B8B\4F53,Arial Narrow;
+    color: #666;
+    font-size: 16px;
+    text-decoration: none;
+}
+a:hover {
+    color: #c81623;
+}
+
+.wraper{
+    margin: 150px 200px auto 200px;
+    min-width: 1100px;
+    min-height: 500px;
+}
+
+.title{
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.sec-title{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.left-text{
+    float: left;
+}
+
+.button-left{
+    cursor: pointer;
+    float: left;
+    width: 220px;
+    height: 80px;
+    margin: 0 30px 0 0;
+    background-color: darkgreen;
+    border-radius: 45px;
+    color: white;
+    border: none;
+}
+.button-left span{
+    vertical-align: middle;
+}
+button:hover{
+    box-shadow: 0 8px 8px 0 rgba(47, 79, 79,0.3);
+    transition: 0.3s;
+}
+.button-right{
+    cursor: pointer;
+    float: left;
+    background-color: white;
+    width: 220px;
+    height: 80px;
+    margin: 0 30px;
+    border: 2px solid darkgreen;
+    border-radius: 45px;
+    color: darkgreen;
+}
+.button-right span{
+    vertical-align: middle;
+}
+button img{
+    width: 40px;
+    height: 35px;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+em,i {
+    font-style: normal
+}
+.clear-fix{
+    content: '';
+    display: block;
+    clear: both;
+}
+.right{
+    float: right;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+#right-pic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.play{
+    display: none;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 44%;
+    left: 44%;
+    border-radius: 90px;
+    border: none;
+}
+.play:hover{
+    cursor: pointer;
+    transform: rotate(360deg) scale(1.5);
+    transition: 1s;
+    box-shadow: 0 0 18px 0 rgba(47, 79, 79, 1);
+}
+img {
+    border: 0;
+    vertical-align: middle
+}
