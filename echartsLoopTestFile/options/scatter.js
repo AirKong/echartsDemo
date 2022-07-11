@@ -31,7 +31,7 @@ const scatterOptions = [
         series: [
             {
                 type: 'scatter',
-                data: data,
+                data: scatterData,
                 symbol: 'roundRect',
                 symbolKeepAspect: true,
                 universalTransition: true,
