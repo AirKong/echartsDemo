@@ -11,11 +11,12 @@
 	<script src="options/pieToSquare.js"></script>
 	<script src="options/scatter.js"></script>
 	<script src="options/squareToScatter.js"></script>
+	<script src="options/calendar.js"></script>
 	<style>
 		#main{
 			width: 800px;
 			height:700px;
-			background-color:rgba(108,166,205,0.3);
+			/*background-color:rgba(108,166,205,0.3);*/
 			top:0;
 			bottom:0;
 			left:0;
@@ -93,13 +94,16 @@
 
 
 	// 切换到日历图
-
+	setTimeout(function() {
+		myChart.clear();
+		myChart.setOption(calendarOption);
+	}, 16000);
 
 	// ending
 	setTimeout(function() {
 		myChart.clear();
 		myChart.setOption(endingOption);
-	}, 16000);
+	}, 17000);
 
 </script>
 </html>
